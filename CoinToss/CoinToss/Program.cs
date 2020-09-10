@@ -18,6 +18,16 @@ namespace CoinToss
             else if (number == 1)
                 Console.WriteLine("The coin landed on Tails");
 
+            if (pick == "heads" && number == 0)
+                Console.WriteLine("Your guess was right!");
+            else if (pick == "tails" && number == 1)
+                Console.WriteLine("Your guess was right!");
+            else if (pick == "heads" && number == 1)
+                Console.WriteLine("Your guess was incorrect");
+            else if (pick == "tails" && number == 0)
+                Console.WriteLine("Your guess was incorrect");
+
+
             
         }
     }
