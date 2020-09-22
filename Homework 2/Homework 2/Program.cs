@@ -11,7 +11,7 @@ namespace Homework_2
         static void Main(string[] args)
         {
             double acctGrade, markGrade, econGrade, misGrade;
-            //string Aaact, B, C, D, F;
+            //string Aacct, B, C, D, F;
 
             Console.WriteLine("What is your overall percentage grade in Accounting?");
             acctGrade = Convert.ToDouble(Console.ReadLine());
@@ -26,7 +26,7 @@ namespace Homework_2
             misGrade = Convert.ToDouble(Console.ReadLine());
 
             if (acctGrade >= 90)
-                //Aacct = Console.WriteLine("Your Accounting grade is an A");
+                acctGrade = Console.WriteLine("Your Accounting grade is an A");
 
 
 
