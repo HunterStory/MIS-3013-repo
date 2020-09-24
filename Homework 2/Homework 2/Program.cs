@@ -25,12 +25,30 @@ namespace Homework_2
             Console.WriteLine("What is your overall percentage grade in MIS?");
             misGrade = Convert.ToDouble(Console.ReadLine());
 
+
+
+            string acct;
             if (acctGrade >= 90)
+                acct = "A";
+            else if (acctGrade >= 80 && acctGrade < 90)
+                acct = "B";
+
+
+
+
+
+
+
+
+
+
+
+                if (acctGrade >= 90)
                 Console.WriteLine("Your Accounting grade is an A");
             else if (acctGrade >= 80 && acctGrade < 90)
                 Console.WriteLine("Your Accounting grade is a B");
             else if (acctGrade >= 70 && acctGrade < 80)
-                Console.WriteLine("Your Accounting grade is a C");
+                Console.WriteLine("Your Accounting grade is a C")
             else if (acctGrade >= 60 && acctGrade < 70)
                 Console.WriteLine("Your Accounting grade is a D");
             else Console.WriteLine("Your Accounting grade is an F");
@@ -68,15 +86,7 @@ namespace Homework_2
                 Console.WriteLine("Your MIS grade is a D");
             else Console.WriteLine("Your MIS grade is an F");
 
-            if (acctGrade >= 90)
-                acctGrade = 4;
-            else if (acctGrade >= 80 && acctGrade < 90)
-                acctGrade = 3;
-            else if (acctGrade >= 70 && acctGrade < 80)
-                acctGrade = 2;
-            else if (acctGrade >= 60 && acctGrade < 70)
-                acctGrade = 1;
-            else acctGrade = 0;
+
 
             
             gpa = (acctGrade / 12);
