@@ -24,6 +24,9 @@ namespace Trivia_Quiz
             Console.WriteLine("Grass is yellow. (T/F)");
             Console.WriteLine("Earth is round. (T/F)");
             Console.WriteLine("The sun is yellow. (T/F)");
+
+
+
         }
     }
 }

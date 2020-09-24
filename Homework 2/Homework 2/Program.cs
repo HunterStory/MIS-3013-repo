@@ -26,12 +26,33 @@ namespace Homework_2
             misGrade = Convert.ToDouble(Console.ReadLine());
 
 
-
             string acct;
+            int acctweight;
             if (acctGrade >= 90)
+            {
                 acct = "A";
-            else if (acctGrade >= 80 && acctGrade < 90)
+                acctweight = 4;
+            }
+            else if (acctGrade >= 80)
+            {
                 acct = "B";
+                acctweight = 3;
+            }
+            else if (acctGrade >= 70)
+            {
+                acct = "C";
+                acctweight = 2;
+            }
+            else if (acctGrade >= 60)
+            {
+                acct = "D";
+                acctweight = 1;
+            }
+            else
+            {
+                acct = "F";
+                acctweight = 0;
+            }
 
 
 
@@ -41,59 +62,14 @@ namespace Homework_2
 
 
 
+                Console.WriteLine("Your accounting grade is " + acct);
+
+                gpa = acctweight;
+                Console.WriteLine($"Your GPA is {gpa}");
 
 
-                if (acctGrade >= 90)
-                Console.WriteLine("Your Accounting grade is an A");
-            else if (acctGrade >= 80 && acctGrade < 90)
-                Console.WriteLine("Your Accounting grade is a B");
-            else if (acctGrade >= 70 && acctGrade < 80)
-                Console.WriteLine("Your Accounting grade is a C")
-            else if (acctGrade >= 60 && acctGrade < 70)
-                Console.WriteLine("Your Accounting grade is a D");
-            else Console.WriteLine("Your Accounting grade is an F");
-
-       
-            if (markGrade >= 90)
-                Console.WriteLine("Your Marketing grade is an A");
-            else if (markGrade >= 80 && markGrade < 90)
-                Console.WriteLine("Your Marketing grade is a B");
-            else if (markGrade >= 70 && markGrade < 80)
-                Console.WriteLine("Your Marketing grade is a C");
-            else if (markGrade >= 60 && markGrade < 70)
-                Console.WriteLine("Your Marketing grade is a D");
-            else Console.WriteLine("Your Marketing grade is an F");
-
-
-            if (econGrade >= 90)
-                Console.WriteLine("Your Economics grade is an A");
-            else if (econGrade >= 80 && econGrade < 90)
-                Console.WriteLine("Your Economics grade is a B");
-            else if (econGrade >= 70 && econGrade < 80)
-                Console.WriteLine("Your Economics grade is a C");
-            else if (econGrade >= 60 && econGrade < 70)
-                Console.WriteLine("Your Economics grade is a D");
-            else Console.WriteLine("Your Economics grade is an F");
-
-
-           if (misGrade >= 90)
-                Console.WriteLine("Your MIS grade is an A");
-            else if (misGrade >= 80 && misGrade < 90)
-                Console.WriteLine("Your MIS grade is a B");
-            else if (misGrade >= 70 && misGrade < 80)
-                Console.WriteLine("Your MIS grade is a C");
-            else if (misGrade >= 60 && misGrade < 70)
-                Console.WriteLine("Your MIS grade is a D");
-            else Console.WriteLine("Your MIS grade is an F");
-
-
-
-            
-            gpa = (acctGrade / 12);
-            Console.WriteLine(gpa);
-
-
-             Console.ReadKey();
+                Console.ReadKey();
+            }
         }
     }
-}
+
