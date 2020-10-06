@@ -4,6 +4,7 @@ namespace TuitionIncrease
 {
     class Program
     {
+        static string name = "Hunter Story";
         static void Main(string[] args)
         {
             double tuition = 12000;

@@ -4,6 +4,7 @@ namespace Tutor
 {
     class Program
     {
+        static string name = "Hunter Story";
         static void Main(string[] args)
         {
             Random rnd1 = new Random();
@@ -16,12 +17,11 @@ namespace Tutor
             int guess = Convert.ToInt32(Console.ReadLine());
 
             int answer = num1 + num2;
-            do
+            while (answer != guess)
             {
                 Console.WriteLine("Sorry, that is incorrect. Please try again");
                 guess = Convert.ToInt32(Console.ReadLine());
-
-            } while (answer != guess);
+            }
 
             Console.WriteLine("Congratulations, you got it correct");
             Console.ReadKey();
